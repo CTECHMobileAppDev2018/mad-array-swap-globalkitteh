@@ -16,7 +16,7 @@ class Main {
   // This method swaps any 2 items in any array
   public void arraySwapAny2(int []inputArray, int loc1, int loc2) {
     
-    if (false) { //((loc1 > inputArray.length() || loc2 > inputArray.length()) || (loc1 < 0 || loc2 < 0)){
+    if ((loc1 > inputArray.length || loc2 > inputArray.length) || (loc1 < 0 || loc2 < 0)){
       System.out.println("no dice, dawg");
     }
     else {

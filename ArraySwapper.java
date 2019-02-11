@@ -1,26 +1,31 @@
 import java.util.Arrays;
 
-class ArraySwapper {
+class Main {
   
   // This method assumes you only have 2 items in your array
-  public void arraySwap(int []inputArray) {
-    
-    // Swap the two items in "inputArray" and return the output
+  public void arraySwap(int[] inputArray) {
+
     // put your code here
-    int temp;
-        
+    
+    int indexOne = inputArray[1];
+    int indexZero = inputArray[0];
+    inputArray[0] = indexOne;
+    inputArray[1] = indexZero;
   }
   
   // This method swaps any 2 items in any array
   public void arraySwapAny2(int []inputArray, int loc1, int loc2) {
     
-    // Swap the two items in "inputArray" and return the output
-    // Remember to make sure that loc1 and loc2 are valid positions in the array!
-    int temp;
-        
+    if (false) { //((loc1 > inputArray.length() || loc2 > inputArray.length()) || (loc1 < 0 || loc2 < 0)){
+      System.out.println("no dice, dawg");
+    }
+    else {
+      int indLoc1 = inputArray[loc1];
+      int indLoc2 = inputArray[loc2];
+      inputArray[loc2] = indLoc1;
+      inputArray[loc1] = indLoc2;
+    }
   }
-
-  
   
   public static void main(String[] args) {
 
